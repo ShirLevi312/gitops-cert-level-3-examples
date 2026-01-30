@@ -25,7 +25,6 @@ spec:
         repoURL: https://github.com/shirlevi312/gitops-cert-level-3-examples.git
         targetRevision: HEAD
         path: '{{.path.path}}'
-        kustomize: {}
       
       # Destination cluster and namespace to deploy the application
       destination:
