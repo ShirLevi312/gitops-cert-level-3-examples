@@ -12,6 +12,10 @@ spec:
         owner: shirlevi312
         repo: gitops-cert-level-3-examples
       requeueAfterSeconds: 180
+      filters:
+      - selector:
+          matchLabels:
+            preview-ready: "true"
   template:
     metadata:
       name: 'myapp-{{.branch}}'
